@@ -417,13 +417,23 @@ function App() {
             <h1>Patch Explorer</h1>
             <p>Define your birdwatching patches by drawing polygons or circles on the map</p>
           </div>
-          <button
-            onClick={() => setShowEBirdImport(true)}
-            className="import-button"
-            title="Import eBird data"
-          >
-            Import eBird Data
-          </button>
+          <div className="header-buttons">
+            <button
+              onClick={() => setShowEBirdImport(true)}
+              className="import-button"
+              title="Import eBird data"
+            >
+              Import eBird Data
+            </button>
+            <a
+              href="https://buymeacoffee.com/samheinrich"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="donate-button"
+            >
+              Support
+            </a>
+          </div>
         </div>
       </header>
       <main className="app-main">
