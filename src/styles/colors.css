@@ -1,0 +1,47 @@
+/* eBird-inspired Design Token System */
+
+:root {
+  /* Primary Blues */
+  --color-primary: #1976d2;
+  --color-primary-dark: #1565c0;
+  --color-primary-light: #42a5f5;
+  --color-primary-lighter: #64b5f6;
+
+  /* Chart Colors (from eBird) */
+  --color-chart-bar: #40718f;
+  --color-chart-line: #40718f;
+
+  /* Sidebar & Navigation */
+  --color-sidebar: #465a69;
+  --color-sidebar-dark: #3a4d5a;
+  --color-nav: #2a3f4f;
+
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-gray-50: #f5f6f7;
+  --color-gray-100: #e4e6e8;
+  --color-gray-200: #cfd2d6;
+  --color-gray-300: #9ca3af;
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #4b5563;
+  --color-text-tertiary: #9ca3af;
+
+  /* Status Colors */
+  --color-success: #66bb6a;
+  --color-warning: #ffa726;
+  --color-error: #ef5350;
+
+  /* Overlays (for white text/elements on dark backgrounds) */
+  --overlay-light: rgba(255, 255, 255, 0.08);
+  --overlay-medium: rgba(255, 255, 255, 0.12);
+  --overlay-strong: rgba(255, 255, 255, 0.16);
+  --overlay-border: rgba(255, 255, 255, 0.15);
+  --overlay-text: rgba(255, 255, 255, 0.75);
+  --overlay-text-secondary: rgba(255, 255, 255, 0.6);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}

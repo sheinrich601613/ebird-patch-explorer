@@ -1,0 +1,118 @@
+.map-view {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Custom marker icons */
+.custom-marker-icon {
+  background: none !important;
+  border: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-marker-icon div,
+.custom-marker-icon svg {
+  cursor: pointer;
+}
+
+/* Layer control styling */
+.leaflet-control-layers {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-control-layers-toggle {
+  background-size: 20px 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.leaflet-control-layers-expanded {
+  padding: 10px 12px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.leaflet-control-layers-base label,
+.leaflet-control-layers-overlays label {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.leaflet-control-layers-base label:hover,
+.leaflet-control-layers-overlays label:hover {
+  color: var(--color-primary);
+}
+
+.leaflet-control-layers-base input,
+.leaflet-control-layers-overlays input {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.leaflet-control-layers-separator {
+  margin: 0.5rem 0;
+  border-top: 1px solid #ddd;
+}
+
+/* eBird checklist location markers */
+.ebird-location-icon {
+  background: none !important;
+  border: none !important;
+}
+
+.ebird-location-marker {
+  background-color: #4a90d9;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* eBird cluster toggle control */
+.ebird-cluster-toggle a {
+  width: auto !important;
+  height: auto !important;
+  display: block;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none !important;
+  white-space: nowrap;
+  background: #fff;
+  line-height: normal;
+}
+
+.ebird-cluster-toggle a:hover {
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* Radius tooltip during circle drawing */
+.radius-tooltip {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  white-space: nowrap;
+}

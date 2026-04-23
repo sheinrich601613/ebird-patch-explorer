@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+uploads/
+
+# Personal data files
+.env
+*.csv
+!eBird_taxonomy_v2025.csv
+MyEBirdData*
+ebird_web.html
+ebird_web_files/
+United States - My eBird*
+circular_patch.md
+DEPLOYMENT_PLAN.txt
+TESTING.md
+CLAUDE.md
+.claude/
+process_ebird.py
+server.js
+.Rhistory
+public/ebird_data.json

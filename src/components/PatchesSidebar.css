@@ -1,0 +1,250 @@
+.patches-sidebar {
+  width: 320px;
+  height: 100%;
+  background: var(--color-sidebar);
+  border-right: 1px solid var(--color-sidebar-dark);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  background: var(--color-sidebar-dark);
+}
+
+.sidebar-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--color-white);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.patch-count {
+  color: var(--overlay-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.empty-state {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: var(--overlay-text);
+}
+
+.empty-state p {
+  margin: 0 0 0.5rem 0;
+}
+
+.help-text {
+  font-size: 0.9375rem;
+  color: var(--overlay-text);
+  line-height: 1.5;
+}
+
+.patches-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.patch-card {
+  background: var(--overlay-light);
+  border: 1px solid var(--overlay-border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.patch-card:hover {
+  background: var(--overlay-medium);
+  border-color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.patch-card-selected {
+  background: var(--overlay-medium);
+  border-color: var(--color-primary);
+  border-width: 2px;
+  box-shadow: 0 2px 12px rgba(30, 136, 229, 0.4);
+}
+
+.patch-header {
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+}
+
+.patch-header h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--color-white);
+  letter-spacing: -0.005em;
+  line-height: 1.4;
+  user-select: none;
+  cursor: pointer;
+}
+
+.patch-header h3:hover {
+  opacity: 0.9;
+}
+
+.patch-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--overlay-text-secondary);
+  line-height: 1.5;
+}
+
+.patch-ebird-species {
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.patch-observations {
+  color: var(--overlay-text);
+  font-weight: 400;
+}
+
+.patch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--overlay-border);
+}
+
+.patch-actions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn-placeholder {
+  visibility: hidden;
+}
+
+.btn-icon:hover {
+  background-color: var(--overlay-medium);
+}
+
+.btn-dashboard {
+  background-color: var(--overlay-light);
+}
+
+.btn-dashboard:hover {
+  background-color: var(--color-primary);
+}
+
+.btn-delete-icon:hover {
+  background-color: var(--color-error);
+}
+
+.btn-editing {
+  background-color: var(--color-success);
+}
+
+.btn-editing:hover {
+  background-color: #4caf50;
+}
+
+.btn-pins {
+  background-color: var(--overlay-light);
+}
+
+.btn-pins:hover {
+  background-color: var(--color-primary);
+}
+
+.btn-pins-active {
+  background-color: var(--color-primary);
+}
+
+.btn-pins-active:hover {
+  background-color: var(--color-primary-dark, #1565c0);
+}
+
+.btn-cancel {
+  background-color: var(--color-text-secondary);
+}
+
+.btn-cancel:hover {
+  background-color: var(--color-error);
+}
+
+.patch-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.patch-edit input {
+  padding: 0.5rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  font-size: 1rem;
+  background: var(--color-white);
+}
+
+.patch-edit input:focus {
+  outline: none;
+  border-color: var(--color-primary-dark);
+}
+
+.edit-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-save,
+.btn-cancel {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-save {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-cancel {
+  background-color: var(--color-gray-50);
+  color: var(--color-text-primary);
+}
+
+.btn-cancel:hover {
+  background-color: var(--color-gray-100);
+}
